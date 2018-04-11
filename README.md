@@ -1,45 +1,47 @@
 # PID Control for a Simulated Car
----
 PID controllers are used to control the Steering and Throttle for a simulated car driving around a race track. A combination of manual and "Twiddle " techniques are used to tune the PID controllers. The entire tuning process is described below. The goal is to get the car to drive around the loop, while making sure that it does not go into the non-drivable portion of the road
 
+---
 
 ## PID Controller
----
 A PID controller is a commonly used feedback controller that is widely used in a number of applications. The input into the controller is an error, which is the difference between the measured value and some desired reference value that we are trying to track. The output is the control value that will minimize the input error.
 
 For e.g. in the case of the steering controller, the car is trying to follow the center line and deviation from the center line is measured as a cross track error, which is fed into the steering PID controller. The output is the magnitude of the steering angle value normalized to [-1,1]
 
 Similarly, for the throttle PID the car is trying to drive at a particular speed and deviation of the speed of the car from this speed is the speed error, which is fed into the throttle PID controller. The output is a throttle/braking value normalized to [-1, 1]
 
-## Equation
 ---
+
+## Equation
 Control output = Kp*error (P term) + Ki*Integral of Error over time (I term) + Kd * Rate of change of Error (D term)
 
 Kp, Ki, and Kd are the co-efficients that need to be determined for a particular controller using various tuning techniques. This could range from manually tweaking the parameters, to other methods like "Twiddle" (by Sebastian Thrun), stochastic gradient descent, etc.
 
-## Effect of the P, I, and D terms
 ---
 
-## P term (Kp * error)
+## Effect of the P, I, and D terms
+
+** P term (Kp * error) **
 
 The proportional term or P term provides a control input that is proportional to the input error. This has the effect of reacting instantly and proportionally to any error. A large Kp value will cause the error to be minimized quickly, but will result in overshoot on the other side. This repeats causing oscillations.
 
 This was clearly observed while picking starting values of Kp for the Steering controller. Kp values of around 0.1 with Ki and Kd set to 0, caused steady oscillations. Increasing it beyond 0.2 would cause the car to oscillate wildly out of control.
 
-## D term (Kd * Rate of change of error)
+** D term (Kd * Rate of change of error) **
 
 The Derivative term or D term will anticipate the rate of change of error and can be used to damp out the oscillations or even completely eliminate the overshoot. A lot of systems typically aim for a critically damped response with no overshoot.
 
 Addition of a D term to the Steering controller helped damp out the oscillations. A Kd value of around 1.0 (with Kp at 0.1, Ki at 0.0) seemed to work reasonably well.
 
-## I term (Ki * Integral of error over time)
+** I term (Ki * Integral of error over time) **
 
 The integral term or I term is needed when there is systematic bias or steady state error, which cannot be eliminated by using just the P and D terms. A large I term could also increase overshoot and lead to oscillations.
 
 A small I term of around with Ki = 0.0001 seemed to reduce the average cross track error. But the effect of this term by itself was not clearly identifiable.
 
-## Tuning Process
 ---
+
+## Tuning Process
 
 Implemented a generic Twiddle algorithm to tune any number of parameters.
 
@@ -57,7 +59,7 @@ Reran the Twiddle on the Steering controller for Kp, Ki, and Kd and came up with
 
 Kp = 0.15 Kd = 1.06561 Ki = 0.0001
 
-With the Steering controller and the Throttle controller in place the car is able to drive a lap reasonably well with the tires not entering the non-drivable surface. 
+With the Steering controller and the Throttle controller in place the car is able to drive a lap reasonably well with the tires not entering the non-drivable surface.
 
 
 
