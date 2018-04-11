@@ -6,7 +6,7 @@ using namespace std;
 * TODO: Complete the PID class.
 */
 
-const unsigned BUFFER_SIZE = 3;
+const unsigned BUFFER_SIZE = 5;
 PID::PID() {}
 
 PID::~PID() {}
@@ -31,6 +31,7 @@ void PID::UpdateError(double cte) {
   //d_error = cte - last_cte;
 
   // compute moving average of d_error over 5 samples to smooth it out
+  // ** Did not imrove response
   //double d_buffer_sum = 0;
   //d_error_buffer[d_buffer_index] = cte - p_error;
   //d_buffer_index = (d_buffer_index+1)%BUFFER_SIZE;

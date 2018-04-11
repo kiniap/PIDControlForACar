@@ -29,31 +29,12 @@ m_resetSimulator(false),
 m_enableTwiddle(enableTwiddle),
 m_penalize(false)
 {
-  // match dp to the size of initP
-  //unsigned size = initP.size();
-  //m_dp.resize(size, 1.0);
 
   // Display initial values
   // Display updated parameter values
   std::cout << "----------------- Twiddle run state: "  << m_runState << "-----------------------" << std::endl;
-  std::cout << "Best Error: " << m_bestError << std::endl;
   std::cout << "Initial parameter values ..." << std::endl;
-  //std::cout << " m_p.size = " << m_p.size() << " m_dp.size = " << m_p.size() << std::endl;
-
-  for(unsigned i=0; i < m_p.size(); ++i)
-  {
-    std::cout << m_p[i] << " ";
-  }
-
-  std::cout << "\n";
-
-  for(unsigned j=0; j < m_dp.size(); ++j)
-  {
-    std::cout << m_dp[j] << " ";
-  }
-
-  std::cout << "\n";
-
+  displayParameterValues();
 }
 
 Twiddle::~Twiddle()
@@ -93,6 +74,9 @@ def twiddle(tol=0.2):
                     dp[i] *= 0.9
 */
 
+/*
+ * Display updated parameter values
+ */
 
 void Twiddle::displayParameterValues()
 {
@@ -115,6 +99,10 @@ void Twiddle::displayParameterValues()
   std::cout << "Sum of dp: " << m_sum_dp << " Tolerance: " << m_tolerance << std::endl;
 
 }
+
+/*
+ * Each time the parameters are update, this is called
+ */
 void Twiddle::runSimulationWithUpdatedParameters()
 {
   // Display updated parameter values
@@ -138,17 +126,19 @@ void Twiddle::runSimulationWithUpdatedParameters()
   m_penalize = false;
 }
 
+
+/*
+ * Execute the Twiddle algorithm
+ */
 void Twiddle::run(double err)
 {
-
-
 
   if(m_penalize){
     err *= PENALTY_MULTIPLIER;
     std::cout << "Stopped: Applying penalty Multiplier. CTE = " << err << std::endl;
   }
 
-//  // penalize zero crossings
+//  // penalize zero crossings **This did not help
 // static double last_err = err;
 //  if (last_err * err < 0){
 //    err = fabs(err) + FIXED_PENALTY;
@@ -190,8 +180,9 @@ void Twiddle::run(double err)
     m_runState = TwiddleStart;
   }
 
-
- // Run Twiddle
+ /*
+  * Run Twiddle
+  */
   switch(m_runState)
   {
     case TwiddleStart:
@@ -236,6 +227,4 @@ void Twiddle::run(double err)
       std::cout << "None of the switch case statements are satisfied!" << std::endl;
       // do nothing!
   }
-
-
 }

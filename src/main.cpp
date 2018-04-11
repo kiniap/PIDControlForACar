@@ -52,29 +52,18 @@ int main()
 
   const double tol = 0.2;
   const unsigned maxIter = 300;
-  // Steering PID
-  // TODO: Initialize the pid variable.
-  // values that seem to work well so far
-  // const double Kp = 0.1
-  // const double Kd = 2.0
-  // const double Ki = 0.0001
-
+  // Steering PID and Twiddle parameters
   // Values after twiddle
   const double Kp = 0.15;
   const double Ki = 0.0001;
   const double Kd = 1.06561;
-  // Starting values for Twiddle
-  //const double Kp = 0.2;
-  //const double Ki = 0.0001;
-  //const double Kd = 2.0;
   const std::vector<double> pInit = {Kp, Kd, Ki}; // tune Kp, then, Kd, and then Ki last
   const std::vector<double> dpInit = {0.05, 0.1, 0.0001};
   Twiddle steeringTwiddle = Twiddle(pInit, dpInit, tol, maxIter, false);
   steering_pid.Init(Kp, Ki, Kd);
 
-  // Throttle PID
+  // Throttle PID and Twiddle Parameters
   const double commanded_speed = 30; //mph?
-  // Starting vlaues for Twiddle
   const double Kp_throttle = 0.1;
   const double Ki_throttle = 0.0001;
   const double Kd_throttle = 0.8;
@@ -109,16 +98,14 @@ int main()
           // j[1] is the data JSON object
           double cte = std::stod(j[1]["cte"].get<std::string>());
           double speed = std::stod(j[1]["speed"].get<std::string>());
-          double angle = std::stod(j[1]["steering_angle"].get<std::string>());
+          //double angle = std::stod(j[1]["steering_angle"].get<std::string>());
           double speed_error = speed - commanded_speed;
           double steer_value;
           double throttle_value;
+
           /*
-          * TODO: Calcuate steering value here, remember the steering value is
-          * [-1, 1].
-          * NOTE: Feel free to play around with the throttle and speed. Maybe use
-          * another PID controller to control the speed!
-          */
+           * Display the average error every 100 loops
+           */
           double averageError;
           cteSquareSum += cte*cte;
           if ((nLoops> 0) && (nLoops%100 == 0)){
@@ -128,17 +115,27 @@ int main()
 
           ++nLoops;
 
-          if (isConnected && speed < 0.1)
-            nLoopsSpeedIsZero += 1;
-          else
-            nLoopsSpeedIsZero = 0;
+          /*
+          * TODO: Calcuate steering value here, remember the steering value is
+          * [-1, 1].
+          * NOTE: Feel free to play around with the throttle and speed. Maybe use
+          * another PID controller to control the speed!
+          */
 
           //std::cout << "IsConnected: " << isConnected << " speed: "  << speed <<  " nLoopsSpeedIsZero: " << nLoopsSpeedIsZero << std::endl;
           //std::cout << "P_error: " << pid.p_error << " I_error: " << pid.i_error << " D_error: " << pid.d_error << std::endl;
 
           /*
-           * -------------------- Implement Steering Twiddle -----------------------------------------
+           * --------------------------- Steering Twiddle -----------------------------------
            */
+
+          // During Twiddle check if the vehicle has gone to the undrivable portion and stopped.
+          if (isConnected && speed < 0.1)
+            nLoopsSpeedIsZero += 1;
+          else
+            nLoopsSpeedIsZero = 0;
+
+          // Only run Twiddle if it has been enabled, otherwise use the PID control initial values to control the vehicle
           if(steeringTwiddle.m_enableTwiddle){
 
             if (nLoopsSpeedIsZero > 10)
@@ -164,12 +161,16 @@ int main()
             if(!isConnected)
               cte = 0.0;
           }
+          // ---------------------------- End Steering Twiddle -------------------------------------
 
+          /*
+           * Steering PID Ccontrol
+           */
           steering_pid.UpdateError(cte);
           steer_value = steering_pid.TotalError();
           steer_value = std::max(std::min(steer_value, 1.0), -1.0);
 
-          // Smooth out the steering commands
+          // Smooth out the steering commands. ** Did not improve response
           // Arbitrarily picked 0.5 and 0.5. Could use Twiddle to pick this.
 
           //double static last_steer_value = steer_value;
@@ -177,10 +178,8 @@ int main()
           //last_steer_value = steer_value;
           //steer_value = std::max(std::min(steer_value, 1.0), -1.0);
 
-          // ---------------------------- End Steering Twiddle -------------------------------------
-
           /*
-           * ---------------------------- Implement Throttle Twiddle -------------------------------
+           * --------------------------- Throttle Twiddle -----------------------------------
            */
 
           if(throttleTwiddle.m_enableTwiddle){
@@ -206,12 +205,14 @@ int main()
             if(!isConnected)
               speed_error = 0.0;
           }
+          // ----------------------------- end Throttle Twiddle ----------------------------------------
 
+          /*
+           * Throttle PID control
+           */
           throttle_pid.UpdateError(speed_error);
           throttle_value = throttle_pid.TotalError();
           throttle_value = std::max(std::min(throttle_value, 1.0), -1.0);
-          // ----------------------------- end Throttle Twiddle ----------------------------------------
-
 
           //std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
           json msgJson;

@@ -39,7 +39,7 @@ public:
   double m_tolerance;
   unsigned m_pIndex; //current parameter being tuned
   unsigned m_nIterations; // divide by parameter size before comparing with max iterations?
-  unsigned m_maxIterations;
+  unsigned m_maxIterations; // max iterations to run each cycle for
   bool m_resetSimulator;
   bool m_enableTwiddle;
   bool m_penalize; // penalize for not meeting requirements by setting the average error to a larger number
