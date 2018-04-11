@@ -1,6 +1,8 @@
 #ifndef PID_H
 #define PID_H
 
+#include <vector>
+
 class PID {
 public:
   /*
@@ -16,6 +18,12 @@ public:
   double Kp;
   double Ki;
   double Kd;
+
+  /*
+   * Circular Buffer to store d_errors
+   */
+  std::vector<double> d_error_buffer;
+  unsigned d_buffer_index;
 
   /*
   * Constructor

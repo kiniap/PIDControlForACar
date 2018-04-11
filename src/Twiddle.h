@@ -24,7 +24,7 @@ public:
   };
 
   // constructor
-  explicit Twiddle(const std::vector<double>& initP, double tol, unsigned maxIter, bool enableTwiddle = true);
+  explicit Twiddle(const std::vector<double>& initP, const std::vector<double>& initDp, double tol, unsigned maxIter, bool enableTwiddle = true);
   virtual ~Twiddle();
   void displayParameterValues();
   void runSimulationWithUpdatedParameters();

@@ -1,0 +1,1335 @@
+----------------- Twiddle run state: 0-----------------------
+Best Error: 0
+Initial parameter values ...
+0.2 2 
+0.1 0.2 
+Listening to port 4567
+Connected!!!
+Average cte for 100 is 0.168348
+Average cte for 200 is 0.116601
+Average cte for 300 is 0.189463
+Average cte for 400 is 0.152919
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.3 2 
+dp = 0.1 0.2 
+Best Error: 0.152591
+Sum of dp: 0.3 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.161066
+Average cte for 200 is 0.0972321
+Average cte for 300 is 0.155117
+Average cte for 400 is 0.127326
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.41 2 
+dp = 0.11 0.2 
+Best Error: 0.127297
+Sum of dp: 0.61 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.13671
+Average cte for 200 is 0.114802
+Average cte for 300 is 0.146029
+Average cte for 400 is 0.126343
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.531 2 
+dp = 0.121 0.2 
+Best Error: 0.12625
+Sum of dp: 0.631 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.131512
+Average cte for 200 is 0.147321
+Average cte for 300 is 0.153116
+Average cte for 400 is 0.166569
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289 2 
+dp = 0.121 0.2 
+Best Error: 0.12625
+Sum of dp: 0.321 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149407
+Average cte for 200 is 0.100224
+Average cte for 300 is 0.161059
+Average cte for 400 is 0.133281
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.41 2.2 
+dp = 0.1089 0.2 
+Best Error: 0.12625
+Sum of dp: 0.6299 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.131451
+Average cte for 200 is 0.13662
+Average cte for 300 is 0.151
+Average cte for 400 is 0.130027
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.41 1.8 
+dp = 0.1089 0.2 
+Best Error: 0.12625
+Sum of dp: 0.3089 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134785
+Average cte for 200 is 0.124333
+Average cte for 300 is 0.181807
+Average cte for 400 is 0.177895
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.5189 2 
+dp = 0.1089 0.18 
+Best Error: 0.12625
+Sum of dp: 0.5978 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.127487
+Average cte for 200 is 0.138012
+Average cte for 300 is 0.153005
+Average cte for 400 is 0.146563
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.3011 2 
+dp = 0.1089 0.18 
+Best Error: 0.12625
+Sum of dp: 0.2889 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149916
+Average cte for 200 is 0.0960501
+Average cte for 300 is 0.162703
+Average cte for 400 is 0.135629
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.41 2.18 
+dp = 0.09801 0.18 
+Best Error: 0.12625
+Sum of dp: 0.56691 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135859
+Average cte for 200 is 0.141735
+Average cte for 300 is 0.154648
+Average cte for 400 is 0.135906
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.41 1.82 
+dp = 0.09801 0.18 
+Best Error: 0.12625
+Sum of dp: 0.27801 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.13202
+Average cte for 200 is 0.098055
+Average cte for 300 is 0.198305
+Average cte for 400 is 0.171825
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.50801 2 
+dp = 0.09801 0.162 
+Best Error: 0.12625
+Sum of dp: 0.53802 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.128959
+Average cte for 200 is 0.135951
+Average cte for 300 is 0.144749
+Average cte for 400 is 0.15444
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.31199 2 
+dp = 0.09801 0.162 
+Best Error: 0.12625
+Sum of dp: 0.26001 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.1506
+Average cte for 200 is 0.0909923
+Average cte for 300 is 0.163146
+Average cte for 400 is 0.137062
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.41 2.162 
+dp = 0.088209 0.162 
+Best Error: 0.12625
+Sum of dp: 0.510219 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.132651
+Average cte for 200 is 0.123734
+Average cte for 300 is 0.140641
+Average cte for 400 is 0.120707
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.41 2.3402 
+dp = 0.088209 0.1782 
+Best Error: 0.120654
+Sum of dp: 0.516618 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.130465
+Average cte for 200 is 0.140699
+Average cte for 300 is 0.156459
+Average cte for 400 is 0.147671
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.41 1.9838 
+dp = 0.088209 0.1782 
+Best Error: 0.120654
+Sum of dp: 0.266409 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.12964
+Average cte for 200 is 0.0979355
+Average cte for 300 is 0.156983
+Average cte for 400 is 0.133205
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.498209 2.162 
+dp = 0.088209 0.16038 
+Best Error: 0.120654
+Sum of dp: 0.514998 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134097
+Average cte for 200 is 0.456732
+Average cte for 300 is 0.373163
+Average cte for 400 is 0.30481
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.162 
+dp = 0.088209 0.16038 
+Best Error: 0.120654
+Sum of dp: 0.248589 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.142764
+Average cte for 200 is 0.106235
+Average cte for 300 is 0.138769
+Average cte for 400 is 0.116042
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.418821 2.162 
+dp = 0.0970299 0.16038 
+Best Error: 0.115974
+Sum of dp: 0.505999 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.127353
+Average cte for 200 is 0.12137
+Average cte for 300 is 0.13717
+Average cte for 400 is 0.116902
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.224761 2.162 
+dp = 0.0970299 0.16038 
+Best Error: 0.115974
+Sum of dp: 0.25741 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.165199
+Average cte for 200 is 0.108744
+Average cte for 300 is 0.181516
+Average cte for 400 is 0.150309
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.32238 
+dp = 0.0873269 0.16038 
+Best Error: 0.115974
+Sum of dp: 0.505117 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139089
+Average cte for 200 is 0.112019
+Average cte for 300 is 0.139543
+Average cte for 400 is 0.129985
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.00162 
+dp = 0.0873269 0.16038 
+Best Error: 0.115974
+Sum of dp: 0.247707 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.14358
+Average cte for 200 is 0.0956072
+Average cte for 300 is 0.156537
+Average cte for 400 is 0.132828
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.409118 2.162 
+dp = 0.0873269 0.144342 
+Best Error: 0.115974
+Sum of dp: 0.479376 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.128996
+Average cte for 200 is 0.13148
+Average cte for 300 is 0.14955
+Average cte for 400 is 0.125607
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.234464 2.162 
+dp = 0.0873269 0.144342 
+Best Error: 0.115974
+Sum of dp: 0.231669 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.15746
+Average cte for 200 is 0.107818
+Average cte for 300 is 0.164996
+Average cte for 400 is 0.13425
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.30634 
+dp = 0.0785942 0.144342 
+Best Error: 0.115974
+Sum of dp: 0.454605 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.147766
+Average cte for 200 is 0.131945
+Average cte for 300 is 0.152415
+Average cte for 400 is 0.134808
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.01766 
+dp = 0.0785942 0.144342 
+Best Error: 0.115974
+Sum of dp: 0.222936 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135262
+Average cte for 200 is 0.0922291
+Average cte for 300 is 0.152338
+Average cte for 400 is 0.125987
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.400385 2.162 
+dp = 0.0785942 0.129908 
+Best Error: 0.115974
+Sum of dp: 0.431438 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.131471
+Average cte for 200 is 0.13799
+Average cte for 300 is 0.161593
+Average cte for 400 is 0.134919
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.243197 2.162 
+dp = 0.0785942 0.129908 
+Best Error: 0.115974
+Sum of dp: 0.208502 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.161995
+Average cte for 200 is 0.108387
+Average cte for 300 is 0.161424
+Average cte for 400 is 0.135437
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.29191 
+dp = 0.0707348 0.129908 
+Best Error: 0.115974
+Sum of dp: 0.409145 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.136343
+Average cte for 200 is 0.118617
+Average cte for 300 is 0.142196
+Average cte for 400 is 0.118388
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.03209 
+dp = 0.0707348 0.129908 
+Best Error: 0.115974
+Sum of dp: 0.200643 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.132819
+Average cte for 200 is 0.0919905
+Average cte for 300 is 0.165909
+Average cte for 400 is 0.136839
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.392526 2.162 
+dp = 0.0707348 0.116917 
+Best Error: 0.115974
+Sum of dp: 0.388294 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.138479
+Average cte for 200 is 0.133887
+Average cte for 300 is 0.146935
+Average cte for 400 is 0.125915
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.251056 2.162 
+dp = 0.0707348 0.116917 
+Best Error: 0.115974
+Sum of dp: 0.187652 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.150729
+Average cte for 200 is 0.0921572
+Average cte for 300 is 0.163199
+Average cte for 400 is 0.134301
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.27892 
+dp = 0.0636613 0.116917 
+Best Error: 0.115974
+Sum of dp: 0.36823 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139959
+Average cte for 200 is 0.115804
+Average cte for 300 is 0.14535
+Average cte for 400 is 0.136216
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.04508 
+dp = 0.0636613 0.116917 
+Best Error: 0.115974
+Sum of dp: 0.180578 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.132414
+Average cte for 200 is 0.0991248
+Average cte for 300 is 0.139884
+Average cte for 400 is 0.115297
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.17369 
+dp = 0.0636613 0.128609 
+Best Error: 0.115115
+Sum of dp: 0.372848 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139411
+Average cte for 200 is 0.107185
+Average cte for 300 is 0.134904
+Average cte for 400 is 0.114801
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.31516 
+dp = 0.0636613 0.14147 
+Best Error: 0.114677
+Sum of dp: 0.397401 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.142484
+Average cte for 200 is 0.108793
+Average cte for 300 is 0.141087
+Average cte for 400 is 0.142784
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.03222 
+dp = 0.0636613 0.14147 
+Best Error: 0.114677
+Sum of dp: 0.205131 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.140057
+Average cte for 200 is 0.0956554
+Average cte for 300 is 0.147439
+Average cte for 400 is 0.123542
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.385452 2.17369 
+dp = 0.0636613 0.127323 
+Best Error: 0.114677
+Sum of dp: 0.396115 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135659
+Average cte for 200 is 0.111794
+Average cte for 300 is 0.135519
+Average cte for 400 is 0.118831
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.25813 2.17369 
+dp = 0.0636613 0.127323 
+Best Error: 0.114677
+Sum of dp: 0.190984 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.159983
+Average cte for 200 is 0.106778
+Average cte for 300 is 0.151326
+Average cte for 400 is 0.129711
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.30101 
+dp = 0.0572952 0.127323 
+Best Error: 0.114677
+Sum of dp: 0.375602 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149807
+Average cte for 200 is 0.175717
+Average cte for 300 is 0.186241
+Average cte for 400 is 0.180483
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.04637 
+dp = 0.0572952 0.127323 
+Best Error: 0.114677
+Sum of dp: 0.184618 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.145924
+Average cte for 200 is 0.098815
+Average cte for 300 is 0.144304
+Average cte for 400 is 0.119711
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.379086 2.17369 
+dp = 0.0572952 0.11459 
+Best Error: 0.114677
+Sum of dp: 0.356503 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.13739
+Average cte for 200 is 0.120562
+Average cte for 300 is 0.140244
+Average cte for 400 is 0.116954
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.264496 2.17369 
+dp = 0.0572952 0.11459 
+Best Error: 0.114677
+Sum of dp: 0.171886 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.150319
+Average cte for 200 is 0.104381
+Average cte for 300 is 0.145992
+Average cte for 400 is 0.118437
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.28828 
+dp = 0.0515657 0.11459 
+Best Error: 0.114677
+Sum of dp: 0.338042 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.143555
+Average cte for 200 is 0.111432
+Average cte for 300 is 0.14243
+Average cte for 400 is 0.13948
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.0591 
+dp = 0.0515657 0.11459 
+Best Error: 0.114677
+Sum of dp: 0.166156 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.136435
+Average cte for 200 is 0.093373
+Average cte for 300 is 0.156414
+Average cte for 400 is 0.13021
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.373357 2.17369 
+dp = 0.0515657 0.103131 
+Best Error: 0.114677
+Sum of dp: 0.320853 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134264
+Average cte for 200 is 0.136254
+Average cte for 300 is 0.158581
+Average cte for 400 is 0.134109
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.270225 2.17369 
+dp = 0.0515657 0.103131 
+Best Error: 0.114677
+Sum of dp: 0.154697 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149842
+Average cte for 200 is 0.105142
+Average cte for 300 is 0.144252
+Average cte for 400 is 0.121698
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.27682 
+dp = 0.0464091 0.103131 
+Best Error: 0.114677
+Sum of dp: 0.304237 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.153236
+Average cte for 200 is 0.147046
+Average cte for 300 is 0.175399
+Average cte for 400 is 0.140806
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.07056 
+dp = 0.0464091 0.103131 
+Best Error: 0.114677
+Sum of dp: 0.14954 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.150392
+Average cte for 200 is 0.103647
+Average cte for 300 is 0.152097
+Average cte for 400 is 0.125214
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.3682 2.17369 
+dp = 0.0464091 0.0928182 
+Best Error: 0.114677
+Sum of dp: 0.288768 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.136667
+Average cte for 200 is 0.120295
+Average cte for 300 is 0.145123
+Average cte for 400 is 0.12354
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.275382 2.17369 
+dp = 0.0464091 0.0928182 
+Best Error: 0.114677
+Sum of dp: 0.139227 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.155651
+Average cte for 200 is 0.108272
+Average cte for 300 is 0.150925
+Average cte for 400 is 0.125141
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.26651 
+dp = 0.0417682 0.0928182 
+Best Error: 0.114677
+Sum of dp: 0.273814 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.150345
+Average cte for 200 is 0.112614
+Average cte for 300 is 0.145219
+Average cte for 400 is 0.118348
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.08087 
+dp = 0.0417682 0.0928182 
+Best Error: 0.114677
+Sum of dp: 0.134586 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.138797
+Average cte for 200 is 0.0941517
+Average cte for 300 is 0.155837
+Average cte for 400 is 0.127429
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.363559 2.17369 
+dp = 0.0417682 0.0835364 
+Best Error: 0.114677
+Sum of dp: 0.259891 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134854
+Average cte for 200 is 0.111806
+Average cte for 300 is 0.20598
+Average cte for 400 is 0.205407
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.280023 2.17369 
+dp = 0.0417682 0.0835364 
+Best Error: 0.114677
+Sum of dp: 0.125305 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.136141
+Average cte for 200 is 0.141377
+Average cte for 300 is 0.163673
+Average cte for 400 is 0.136905
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.25723 
+dp = 0.0375914 0.0835364 
+Best Error: 0.114677
+Sum of dp: 0.246432 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.141829
+Average cte for 200 is 0.246564
+Average cte for 300 is 0.233029
+Average cte for 400 is 0.184649
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.09016 
+dp = 0.0375914 0.0835364 
+Best Error: 0.114677
+Sum of dp: 0.121128 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.131762
+Average cte for 200 is 0.100995
+Average cte for 300 is 0.140249
+Average cte for 400 is 0.136106
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.359382 2.17369 
+dp = 0.0375914 0.0751827 
+Best Error: 0.114677
+Sum of dp: 0.233902 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.133577
+Average cte for 200 is 0.124559
+Average cte for 300 is 0.146555
+Average cte for 400 is 0.117438
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.2842 2.17369 
+dp = 0.0375914 0.0751827 
+Best Error: 0.114677
+Sum of dp: 0.112774 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.145102
+Average cte for 200 is 0.103659
+Average cte for 300 is 0.16231
+Average cte for 400 is 0.136204
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.24887 
+dp = 0.0338322 0.0751827 
+Best Error: 0.114677
+Sum of dp: 0.221789 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.148265
+Average cte for 200 is 0.124124
+Average cte for 300 is 0.150095
+Average cte for 400 is 0.124088
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.09851 
+dp = 0.0338322 0.0751827 
+Best Error: 0.114677
+Sum of dp: 0.109015 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135754
+Average cte for 200 is 0.092096
+Average cte for 300 is 0.13597
+Average cte for 400 is 0.114433
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.18121 
+dp = 0.0338322 0.082701 
+Best Error: 0.114406
+Sum of dp: 0.225548 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135
+Average cte for 200 is 0.0984856
+Average cte for 300 is 0.134884
+Average cte for 400 is 0.114168
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.27218 
+dp = 0.0338322 0.0909711 
+Best Error: 0.114087
+Sum of dp: 0.241337 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.135677
+Average cte for 200 is 0.133427
+Average cte for 300 is 0.170402
+Average cte for 400 is 0.138412
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.09024 
+dp = 0.0338322 0.0909711 
+Best Error: 0.114087
+Sum of dp: 0.124803 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.140515
+Average cte for 200 is 0.100744
+Average cte for 300 is 0.140062
+Average cte for 400 is 0.115195
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.355623 2.18121 
+dp = 0.0338322 0.081874 
+Best Error: 0.114087
+Sum of dp: 0.24051 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139138
+Average cte for 200 is 0.125198
+Average cte for 300 is 0.160766
+Average cte for 400 is 0.129212
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.287959 2.18121 
+dp = 0.0338322 0.081874 
+Best Error: 0.114087
+Sum of dp: 0.115706 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.1474
+Average cte for 200 is 0.104365
+Average cte for 300 is 0.142521
+Average cte for 400 is 0.118692
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.26308 
+dp = 0.030449 0.081874 
+Best Error: 0.114087
+Sum of dp: 0.228029 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.152789
+Average cte for 200 is 0.114383
+Average cte for 300 is 0.138173
+Average cte for 400 is 0.114853
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.09934 
+dp = 0.030449 0.081874 
+Best Error: 0.114087
+Sum of dp: 0.112323 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149449
+Average cte for 200 is 0.104861
+Average cte for 300 is 0.153347
+Average cte for 400 is 0.12424
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.35224 2.18121 
+dp = 0.030449 0.0736866 
+Best Error: 0.114087
+Sum of dp: 0.216459 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139212
+Average cte for 200 is 0.122085
+Average cte for 300 is 0.151956
+Average cte for 400 is 0.126153
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.291342 2.18121 
+dp = 0.030449 0.0736866 
+Best Error: 0.114087
+Sum of dp: 0.104136 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.14828
+Average cte for 200 is 0.107834
+Average cte for 300 is 0.145398
+Average cte for 400 is 0.121933
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.321791 2.2549 
+dp = 0.0274041 0.0736866 
+Best Error: 0.114087
+Sum of dp: 0.205226 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134066
+Average cte for 200 is 0.105216
+Average cte for 300 is 0.136269
+Average cte for 400 is 0.116168
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.321791 2.10752 
+dp = 0.0274041 0.0736866 
+Best Error: 0.114087
+Sum of dp: 0.101091 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139715
+Average cte for 200 is 0.102652
+Average cte for 300 is 0.139764
+Average cte for 400 is 0.115335
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.349195 2.18121 
+dp = 0.0274041 0.0663179 
+Best Error: 0.114087
+Sum of dp: 0.194813 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.134871
+Average cte for 200 is 0.109323
+Average cte for 300 is 0.137866
+Average cte for 400 is 0.1134
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.37934 2.18121 
+dp = 0.0301445 0.0663179 
+Best Error: 0.11323
+Sum of dp: 0.190185 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.130724
+Average cte for 200 is 0.112914
+Average cte for 300 is 0.137828
+Average cte for 400 is 0.114721
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.319051 2.18121 
+dp = 0.0301445 0.0663179 
+Best Error: 0.11323
+Sum of dp: 0.0964625 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.141766
+Average cte for 200 is 0.104463
+Average cte for 300 is 0.13494
+Average cte for 400 is 0.111686
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.35221 2.18121 
+dp = 0.033159 0.0663179 
+Best Error: 0.111641
+Sum of dp: 0.195939 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.13877
+Average cte for 200 is 0.109989
+Average cte for 300 is 0.134919
+Average cte for 400 is 0.11356
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.285892 2.18121 
+dp = 0.033159 0.0663179 
+Best Error: 0.111641
+Sum of dp: 0.0994769 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.14856
+Average cte for 200 is 0.109092
+Average cte for 300 is 0.153295
+Average cte for 400 is 0.129101
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.319051 2.24753 
+dp = 0.0298431 0.0663179 
+Best Error: 0.111641
+Sum of dp: 0.195638 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.147255
+Average cte for 200 is 0.117669
+Average cte for 300 is 0.153322
+Average cte for 400 is 0.162288
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.319051 2.11489 
+dp = 0.0298431 0.0663179 
+Best Error: 0.111641
+Sum of dp: 0.096161 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.147634
+Average cte for 200 is 0.113036
+Average cte for 300 is 0.147039
+Average cte for 400 is 0.125026
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.348894 2.18121 
+dp = 0.0298431 0.0596862 
+Best Error: 0.111641
+Sum of dp: 0.18569 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.136499
+Average cte for 200 is 0.106794
+Average cte for 300 is 0.132595
+Average cte for 400 is 0.116285
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.18121 
+dp = 0.0298431 0.0596862 
+Best Error: 0.111641
+Sum of dp: 0.0895292 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.144265
+Average cte for 200 is 0.100993
+Average cte for 300 is 0.133817
+Average cte for 400 is 0.111172
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.322035 2.18121 
+dp = 0.0328274 0.0596862 
+Best Error: 0.111164
+Sum of dp: 0.182043 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.143183
+Average cte for 200 is 0.105797
+Average cte for 300 is 0.137341
+Average cte for 400 is 0.116298
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.25638 2.18121 
+dp = 0.0328274 0.0596862 
+Best Error: 0.111164
+Sum of dp: 0.0925135 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.162067
+Average cte for 200 is 0.104667
+Average cte for 300 is 0.151832
+Average cte for 400 is 0.125963
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.2409 
+dp = 0.0295446 0.0596862 
+Best Error: 0.111164
+Sum of dp: 0.181744 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.143496
+Average cte for 200 is 0.117128
+Average cte for 300 is 0.146828
+Average cte for 400 is 0.124583
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.12152 
+dp = 0.0295446 0.0596862 
+Best Error: 0.111164
+Sum of dp: 0.0892308 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.145351
+Average cte for 200 is 0.100997
+Average cte for 300 is 0.145455
+Average cte for 400 is 0.118609
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.318752 2.18121 
+dp = 0.0295446 0.0537175 
+Best Error: 0.111164
+Sum of dp: 0.172493 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.141127
+Average cte for 200 is 0.107837
+Average cte for 300 is 0.141891
+Average cte for 400 is 0.11872
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.259663 2.18121 
+dp = 0.0295446 0.0537175 
+Best Error: 0.111164
+Sum of dp: 0.0832622 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.161152
+Average cte for 200 is 0.104703
+Average cte for 300 is 0.155022
+Average cte for 400 is 0.133453
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.23493 
+dp = 0.0265902 0.0537175 
+Best Error: 0.111164
+Sum of dp: 0.16357 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149547
+Average cte for 200 is 0.120504
+Average cte for 300 is 0.156592
+Average cte for 400 is 0.132037
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.12749 
+dp = 0.0265902 0.0537175 
+Best Error: 0.111164
+Sum of dp: 0.0803077 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.146415
+Average cte for 200 is 0.100439
+Average cte for 300 is 0.144817
+Average cte for 400 is 0.119638
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.315798 2.18121 
+dp = 0.0265902 0.0483458 
+Best Error: 0.111164
+Sum of dp: 0.155244 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.145985
+Average cte for 200 is 0.110629
+Average cte for 300 is 0.145868
+Average cte for 400 is 0.120859
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.262617 2.18121 
+dp = 0.0265902 0.0483458 
+Best Error: 0.111164
+Sum of dp: 0.074936 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.156271
+Average cte for 200 is 0.107345
+Average cte for 300 is 0.153594
+Average cte for 400 is 0.130093
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.22956 
+dp = 0.0239312 0.0483458 
+Best Error: 0.111164
+Sum of dp: 0.147213 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149508
+Average cte for 200 is 0.107719
+Average cte for 300 is 0.140238
+Average cte for 400 is 0.120417
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.13286 
+dp = 0.0239312 0.0483458 
+Best Error: 0.111164
+Sum of dp: 0.0722769 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.149953
+Average cte for 200 is 0.111431
+Average cte for 300 is 0.159818
+Average cte for 400 is 0.129987
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.313139 2.18121 
+dp = 0.0239312 0.0435112 
+Best Error: 0.111164
+Sum of dp: 0.139719 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.138227
+Average cte for 200 is 0.102778
+Average cte for 300 is 0.132562
+Average cte for 400 is 0.11184
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.265276 2.18121 
+dp = 0.0239312 0.0435112 
+Best Error: 0.111164
+Sum of dp: 0.0674424 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.152123
+Average cte for 200 is 0.107734
+Average cte for 300 is 0.152605
+Average cte for 400 is 0.125044
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.22472 
+dp = 0.021538 0.0435112 
+Best Error: 0.111164
+Sum of dp: 0.132492 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.143752
+Average cte for 200 is 0.0929603
+Average cte for 300 is 0.148097
+Average cte for 400 is 0.126349
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.1377 
+dp = 0.021538 0.0435112 
+Best Error: 0.111164
+Sum of dp: 0.0650492 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.139023
+Average cte for 200 is 0.106278
+Average cte for 300 is 0.144016
+Average cte for 400 is 0.119975
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.310746 2.18121 
+dp = 0.021538 0.0391601 
+Best Error: 0.111164
+Sum of dp: 0.125747 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.145752
+Average cte for 200 is 0.175697
+Average cte for 300 is 0.181586
+Average cte for 400 is 0.148494
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.267669 2.18121 
+dp = 0.021538 0.0391601 
+Best Error: 0.111164
+Sum of dp: 0.0606981 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.14805
+Average cte for 200 is 0.109406
+Average cte for 300 is 0.153475
+Average cte for 400 is 0.126413
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.22037 
+dp = 0.0193842 0.0391601 
+Best Error: 0.111164
+Sum of dp: 0.119242 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.140724
+Average cte for 200 is 0.103187
+Average cte for 300 is 0.140445
+Average cte for 400 is 0.122414
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.14205 
+dp = 0.0193842 0.0391601 
+Best Error: 0.111164
+Sum of dp: 0.0585443 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.151062
+Average cte for 200 is 0.0989235
+Average cte for 300 is 0.147084
+Average cte for 400 is 0.127509
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.308592 2.18121 
+dp = 0.0193842 0.0352441 
+Best Error: 0.111164
+Sum of dp: 0.113173 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.144407
+Average cte for 200 is 0.118399
+Average cte for 300 is 0.145003
+Average cte for 400 is 0.123898
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.269823 2.18121 
+dp = 0.0193842 0.0352441 
+Best Error: 0.111164
+Sum of dp: 0.0546283 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.151212
+Average cte for 200 is 0.104139
+Average cte for 300 is 0.157604
+Average cte for 400 is 0.129665
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.289208 2.21645 
+dp = 0.0174458 0.0352441 
+Best Error: 0.111164
+Sum of dp: 0.107318 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.142814
+Average cte for 200 is 0.100754
+Average cte for 300 is 0.141824
+Average cte for 400 is 0.117786
+----------------- Twiddle run state: 3-----------------------
+Updated parameter values to ...
+P = 0.289208 2.14597 
+dp = 0.0174458 0.0352441 
+Best Error: 0.111164
+Sum of dp: 0.0526899 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.140824
+Average cte for 200 is 0.103174
+Average cte for 300 is 0.142158
+Average cte for 400 is 0.121037
+----------------- Twiddle run state: 2-----------------------
+Updated parameter values to ...
+P = 0.306653 2.18121 
+dp = 0.0174458 0.0317197 
+Best Error: 0.111164
+Sum of dp: 0.101855 Tolerance: 0.05
+42["reset",{}]
+Connected!!!
+Average cte for 100 is 0.144364
+Average cte for 200 is 0.104882
+Average cte for 300 is 0.140131
+Average cte for 400 is 0.118449
+======================= Final set of parameters===========================
+P = 0.306653 2.18121 
+dp = 0.0174458 0.0317197 
+Best Error: 0.111164
+Sum of dp: 0.0491655 Tolerance: 0.05
+Average cte for 500 is 0.181329
+Average cte for 600 is 0.198554
+Average cte for 700 is 0.378624
+Average cte for 800 is 0.461891
+Average cte for 900 is 0.418141
+Average cte for 1000 is 0.385521
+Average cte for 1100 is 0.365676
+Average cte for 1200 is 0.343109
+Average cte for 1300 is 0.329624
+Average cte for 1400 is 0.32736
+Average cte for 1500 is 0.322437
+Average cte for 1600 is 0.440033
+Average cte for 1700 is 0.41739
+Average cte for 1800 is 0.396979
+Average cte for 1900 is 0.382237
+Average cte for 2000 is 0.370072
+Average cte for 2100 is 0.362445
+Average cte for 2200 is 0.362128
+Average cte for 2300 is 0.362605
+Average cte for 2400 is 0.437701
+Average cte for 2500 is 0.423433
+Average cte for 2600 is 0.409328
+Average cte for 2700 is 0.39742
+Average cte for 2800 is 0.39033
+Average cte for 2900 is 0.378312
+Average cte for 3000 is 0.373378
+Average cte for 3100 is 0.37102
+Average cte for 3200 is 0.39315
+Average cte for 3300 is 0.439902
+Average cte for 3400 is 0.428779
+Average cte for 3500 is 0.418397
+Average cte for 3600 is 0.410036
+Average cte for 3700 is 0.401632
+Average cte for 3800 is 0.396852
+Average cte for 3900 is 0.391808
+Average cte for 4000 is 0.389478
+Average cte for 4100 is 0.437937
+Average cte for 4200 is 0.428842
+Average cte for 4300 is 0.420269
+Average cte for 4400 is 0.413155
+Average cte for 4500 is 0.406679
+Average cte for 4600 is 0.399333
+Average cte for 4700 is 0.397574
+Average cte for 4800 is 0.398719
+Average cte for 4900 is 0.42276
+Average cte for 5000 is 0.41575
+Average cte for 5100 is 0.408788
+Average cte for 5200 is 0.402593
+Average cte for 5300 is 0.397985
+Average cte for 5400 is 0.393916
+Average cte for 5500 is 0.389203
+Average cte for 5600 is 0.385596
+Average cte for 5700 is 0.395859
+Average cte for 5800 is 0.416093
+Average cte for 5900 is 0.410248
+Average cte for 6000 is 0.404762
+Average cte for 6100 is 0.39957
+Average cte for 6200 is 0.394781
+Average cte for 6300 is 0.392295

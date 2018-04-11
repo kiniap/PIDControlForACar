@@ -47,24 +47,48 @@ int main()
   bool isConnected = false;
   unsigned nLoopsSpeedIsZero = 0;
 
-  PID pid;
+  PID steering_pid;
+  PID throttle_pid;
+
+  const double tol = 0.2;
+  const unsigned maxIter = 300;
+  // Steering PID
   // TODO: Initialize the pid variable.
   // values that seem to work well so far
   // const double Kp = 0.1
   // const double Kd = 2.0
   // const double Ki = 0.0001
-  const double Kp = 0.1;
-  const double Ki = 0.001;
-  const double Kd = 2.0;
-  const std::vector<double> pInit = {Kp, Kd};
-  const double tol = 0.2;
-  const unsigned maxIter = 500;
-  Twiddle steeringTwiddle = Twiddle(pInit, tol, maxIter, true);
-  pid.Init(Kp, Ki, Kd);
 
-  //unsigned nLoops = 0;
+  // Values after twiddle
+  const double Kp = 0.15;
+  const double Ki = 0.0001;
+  const double Kd = 1.06561;
+  // Starting values for Twiddle
+  //const double Kp = 0.2;
+  //const double Ki = 0.0001;
+  //const double Kd = 2.0;
+  const std::vector<double> pInit = {Kp, Kd, Ki}; // tune Kp, then, Kd, and then Ki last
+  const std::vector<double> dpInit = {0.05, 0.1, 0.0001};
+  Twiddle steeringTwiddle = Twiddle(pInit, dpInit, tol, maxIter, false);
+  steering_pid.Init(Kp, Ki, Kd);
 
-  h.onMessage([&pid, &steeringTwiddle, &isConnected, &nLoopsSpeedIsZero](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
+  // Throttle PID
+  const double commanded_speed = 30; //mph?
+  // Starting vlaues for Twiddle
+  const double Kp_throttle = 0.1;
+  const double Ki_throttle = 0.0001;
+  const double Kd_throttle = 0.8;
+
+  const std::vector<double> pInit_throttle = {Kp_throttle, Kd_throttle, Ki_throttle}; // tune Kp, then, Kd, and then Ki last
+  const std::vector<double> dpInit_throttle = {0.05, 0.1, 0.0001};
+  Twiddle throttleTwiddle = Twiddle(pInit_throttle, dpInit_throttle, tol, maxIter, false);
+  throttle_pid.Init(Kp_throttle, Ki_throttle, Kd_throttle);
+
+  // calculate average error
+  unsigned nLoops = 0;
+  double cteSquareSum = 0.0;
+
+  h.onMessage([&steering_pid, &steeringTwiddle, &throttle_pid, &throttleTwiddle, &commanded_speed, &isConnected, &nLoopsSpeedIsZero, &nLoops, &cteSquareSum](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
     // The 4 signifies a websocket message
     // The 2 signifies a websocket event
@@ -76,7 +100,6 @@ int main()
         //nLoops = 0;
       //}
 
-      //++nLoops;
 
       auto s = hasData(std::string(data).substr(0, length));
       if (s != "") {
@@ -87,13 +110,23 @@ int main()
           double cte = std::stod(j[1]["cte"].get<std::string>());
           double speed = std::stod(j[1]["speed"].get<std::string>());
           double angle = std::stod(j[1]["steering_angle"].get<std::string>());
+          double speed_error = speed - commanded_speed;
           double steer_value;
+          double throttle_value;
           /*
           * TODO: Calcuate steering value here, remember the steering value is
           * [-1, 1].
           * NOTE: Feel free to play around with the throttle and speed. Maybe use
           * another PID controller to control the speed!
           */
+          double averageError;
+          cteSquareSum += cte*cte;
+          if ((nLoops> 0) && (nLoops%100 == 0)){
+            averageError = cteSquareSum/nLoops;
+            std::cout << "Average cte for " << nLoops << " is " << averageError << std::endl;
+          }
+
+          ++nLoops;
 
           if (isConnected && speed < 0.1)
             nLoopsSpeedIsZero += 1;
@@ -101,7 +134,11 @@ int main()
             nLoopsSpeedIsZero = 0;
 
           //std::cout << "IsConnected: " << isConnected << " speed: "  << speed <<  " nLoopsSpeedIsZero: " << nLoopsSpeedIsZero << std::endl;
+          //std::cout << "P_error: " << pid.p_error << " I_error: " << pid.i_error << " D_error: " << pid.d_error << std::endl;
 
+          /*
+           * -------------------- Implement Steering Twiddle -----------------------------------------
+           */
           if(steeringTwiddle.m_enableTwiddle){
 
             if (nLoopsSpeedIsZero > 10)
@@ -112,26 +149,74 @@ int main()
 
             if (steeringTwiddle.m_resetSimulator){
               resetSimulator(ws);
-              pid.Init(steeringTwiddle.m_p[0],pid.Ki, steeringTwiddle.m_p[1]);
+              steering_pid.Init(steeringTwiddle.m_p[0],steeringTwiddle.m_p[2], steeringTwiddle.m_p[1]);
               steeringTwiddle.m_resetSimulator = false;
-              //std::cout << "P_error: " << pid.p_error << "I_error:" << pid.i_error << "D_error:" << pid.d_error << std::endl;
+
 
               // after a reset set isConnected to false, and keep setting cte to zero until we are connected
               isConnected = false;
+
+              //reset
+              nLoops = 0;
+              cteSquareSum = 0.0;
             }
 
             if(!isConnected)
               cte = 0.0;
           }
 
-          pid.UpdateError(cte);
-          steer_value = pid.TotalError();
-          // DEBUG
+          steering_pid.UpdateError(cte);
+          steer_value = steering_pid.TotalError();
           steer_value = std::max(std::min(steer_value, 1.0), -1.0);
+
+          // Smooth out the steering commands
+          // Arbitrarily picked 0.5 and 0.5. Could use Twiddle to pick this.
+
+          //double static last_steer_value = steer_value;
+          //steer_value = 0.5*steer_value+0.5*last_steer_value;
+          //last_steer_value = steer_value;
+          //steer_value = std::max(std::min(steer_value, 1.0), -1.0);
+
+          // ---------------------------- End Steering Twiddle -------------------------------------
+
+          /*
+           * ---------------------------- Implement Throttle Twiddle -------------------------------
+           */
+
+          if(throttleTwiddle.m_enableTwiddle){
+
+            if (nLoopsSpeedIsZero > 10)
+              throttleTwiddle.m_penalize = true;
+
+            throttleTwiddle.run(speed_error);
+
+            if (throttleTwiddle.m_resetSimulator){
+              resetSimulator(ws);
+              throttle_pid.Init(throttleTwiddle.m_p[0],throttleTwiddle.m_p[2], throttleTwiddle.m_p[1]);
+              throttleTwiddle.m_resetSimulator = false;
+
+              // after a reset set isConnected to false, and keep setting cte to zero until we are connected
+              isConnected = false;
+
+              //reset
+              nLoops = 0;
+              cteSquareSum = 0.0;
+            }
+
+            if(!isConnected)
+              speed_error = 0.0;
+          }
+
+          throttle_pid.UpdateError(speed_error);
+          throttle_value = throttle_pid.TotalError();
+          throttle_value = std::max(std::min(throttle_value, 1.0), -1.0);
+          // ----------------------------- end Throttle Twiddle ----------------------------------------
+
+
           //std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          msgJson["throttle"] = 0.3;
+          msgJson["throttle"] = throttle_value;// was 0.3;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           //std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);

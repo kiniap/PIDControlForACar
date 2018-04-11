@@ -8,13 +8,15 @@
  */
 
 #include <iostream>
+#include <math.h> // fabs
 #include "Twiddle.h"
 
 const unsigned PENALTY_MULTIPLIER = 10;
+const unsigned FIXED_PENALTY = 0.1;
 
-Twiddle::Twiddle(const std::vector<double>& initP, double tol, unsigned maxIter, bool enableTwiddle):
+Twiddle::Twiddle(const std::vector<double>& initP, const std::vector<double>& initDp, double tol, unsigned maxIter, bool enableTwiddle):
 m_p(initP),
-m_dp(initP.size(), 0.1),
+m_dp(initDp),
 m_runState(Initialized),
 m_errorSum(0.0),
 m_bestError(0.0),
@@ -108,9 +110,18 @@ void Twiddle::displayParameterValues()
   }
   std::cout << "\n";
 
+  std::cout << "Best Error: " << m_bestError << std::endl;
+
+  std::cout << "Sum of dp: " << m_sum_dp << " Tolerance: " << m_tolerance << std::endl;
+
 }
 void Twiddle::runSimulationWithUpdatedParameters()
 {
+  // Display updated parameter values
+  std::cout << "----------------- Twiddle run state: "  << m_runState << "-----------------------" << std::endl;
+  std::cout << "Updated parameter values to ..." << std::endl;
+  displayParameterValues();
+
   // set nIerations to zero
   m_nIterations = 0;
 
@@ -120,21 +131,30 @@ void Twiddle::runSimulationWithUpdatedParameters()
   // reset error sum
   m_errorSum = 0;
 
+  // reset sum of dp
+  m_sum_dp = 0;
+
   // reset penalty
   m_penalize = false;
-
-  // Display updated parameter values
-  std::cout << "----------------- Twiddle run state: "  << m_runState << "-----------------------" << std::endl;
-  std::cout << "Best Error: " << m_bestError << std::endl;
-  std::cout << "Updated parameter values to ..." << std::endl;
-  displayParameterValues();
 }
 
 void Twiddle::run(double err)
 {
 
-  if(m_penalize)
+
+
+  if(m_penalize){
     err *= PENALTY_MULTIPLIER;
+    std::cout << "Stopped: Applying penalty Multiplier. CTE = " << err << std::endl;
+  }
+
+//  // penalize zero crossings
+// static double last_err = err;
+//  if (last_err * err < 0){
+//    err = fabs(err) + FIXED_PENALTY;
+//    std::cout << "Zero Crossing: Applying fixed penalty. CTE = " << err << std::endl;
+//  }
+//  last_err = err;
 
   if (m_nIterations < m_maxIterations){
     ++m_nIterations;
@@ -189,7 +209,7 @@ void Twiddle::run(double err)
         return;
       } else
       {
-        m_p[m_pIndex] = std::max(m_p[m_pIndex]- 2*m_dp[m_pIndex], 0.0); // explore below and don't allow for negative parameters
+        m_p[m_pIndex] = std::max(m_p[m_pIndex] - 2*m_dp[m_pIndex], 0.0); // explore below and don't allow for negative parameters
         // run simulation with updated parameter from start
         runSimulationWithUpdatedParameters();
         m_runState = TwiddleLowerErrorCheck;
@@ -205,11 +225,12 @@ void Twiddle::run(double err)
       {
         m_p[m_pIndex] += m_dp[m_pIndex]; // set it back to the original value
         m_dp[m_pIndex] *= 0.9; // Start making the dp smaller
+        // Move on to the next parameter
+        m_pIndex = (m_pIndex+1)%(m_p.size());
       }
       // In either case, go back to start of twiddle
       m_runState = TwiddleStart;
-      // Move on to the next parameter
-      m_pIndex = (m_pIndex+1)%(m_p.size());
+
       break;
     default:
       std::cout << "None of the switch case statements are satisfied!" << std::endl;
